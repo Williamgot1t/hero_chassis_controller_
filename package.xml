@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>hero_chassis_controller</name>
+  <version>0.0.0</version>
+  <description>The hero_chassis_controller package</description>
+  <buildtool_depend>catkin</buildtool_depend>
+  <maintainer email="supeiyuan@gmail.com">Bence Magyar</maintainer>
+
+  <license>BSD</license>
+
+  <author>PeiyuanSu</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <depend>control_toolbox</depend>
+  <depend>controller_interface</depend>
+  <depend>realtime_tools</depend>
+  <depend>roscpp</depend>
+  <depend>urdf</depend>
+
+
+  <build_depend>rospy</build_depend>   #Odon
+  <build_depend>tf</build_depend>      #Odon
+  <build_depend>nav_msgs</build_depend>#Odon
+  <build_depend>angles</build_depend>
+  <build_depend>control_msgs</build_depend>
+  <build_depend>hardware_interface</build_depend>
+  <build_depend>forward_command_controller</build_depend>
+  <build_depend>pluginlib</build_depend>
+  <build_depend>std_msgs</build_depend>
+
+  <build_export_depend>control_msgs</build_export_depend>
+  <build_export_depend>forward_command_controller</build_export_depend>
+  <build_export_depend>hardware_interface</build_export_depend>
+  <build_export_depend>std_msgs</build_export_depend>
+  <build_export_depend>nav_msgs</build_export_depend>#Odon
+  <build_export_depend>rospy</build_export_depend>#Odon
+  <build_export_depend>tf</build_export_depend>#Odon
+
+  <exec_depend>tf</exec_depend>#Odon
+  <exec_depend>rospy</exec_depend>#Odon
+  <exec_depend>nav_msgs</exec_depend>#Odon
+
+  <build_depend>message_generation</build_depend>
+  <exec_depend>message_runtime</exec_depend>
+
+
+  <export>
+    <controller_interface plugin="${prefix}/effort_controllers_plugins.xml"/>
+  </export>
+</package>

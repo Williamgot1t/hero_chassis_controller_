@@ -1,0 +1,10 @@
+<library path="lib/libeffort_controllers">
+
+  <class name="effort_controllers/JointVelocityController" type="effort_controllers::JointVelocityController" base_class_type="controller_interface::ControllerBase">
+    <description>
+      The JointVelocityController tracks velocity commands. It expects a EffortJointInterface type of hardware interface.
+    </description>
+  </class>
+
+
+</library>
